@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a9e7b3;
+}
+
+.form {
+    height: 500px;
+    width: 350px;
+    box-shadow: 0px 0px 10px 5px #81818145;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form__input {
+    outline: none;
+    border: 2px solid #333;
+    padding: 5px;
+    width: 100%;
+}
+
+
+.form__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.form__box>p {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.form__title {
+    margin-bottom: 15px;
+}
+
+.form__checkbox_styled {
+    font-size: 0.625rem;
+}
+
+.form__btn {
+    padding: 5px 10px;
+    border-radius: 0px;
+    cursor: pointer;
+
+}
+
+.box__item {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.box__item--center-btn {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.item__msg {
+    font-size: 0.625rem;
+    color: red;
+    display: none;
+}
+
+.box__item--warning input {
+    border: 2px solid brown;
+}
+
+.box__item--warning .item__msg,
+.box__errors--not-filled .item__msg:nth-child(1),
+.box__errors--password-error .item__msg:nth-child(2),
+.box__errors--checkbox-error .item__msg:nth-child(3) {
+    display: block;
+}
