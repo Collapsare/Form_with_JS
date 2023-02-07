@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Form with JS</title>
+</head>
+
+<body>
+    <form class="form">
+        <div class="box form__box">
+            <h3 class="form__title">Регистрация</h3>
+            <div class="box__item">
+                <input type="text" name="" id="firstName" placeholder="Имя" class="form__input" required>
+                <div class="item__msg">Обязательное поле!</div>
+            </div>
+            <div class="box__item"><input type="text" name="" id="lastName" placeholder="Фамилия"
+                    class="form__input" required>
+                    <div class="item__msg">Обязательное поле!</div>
+            </div>
+            <div class="box__item">
+                <input type="email" name="" id="email" placeholder="Ваш e-mail" class="form__input" required>
+                <div class="item__msg">Обязательное поле!</div>
+            </div>
+            <div class="box__item">
+                <input type="password" name="" id="password" placeholder="Пароль" class="form__input">
+                <div class="item__msg">Пароль должен содержать минимум 8 символов, цифру, буквы верхнего и нижнего регистра.</div>
+            </div>
+            <div class="box__item">
+                <input type="password" name="" id="passwordCheck" placeholder="Повторите пароль" class="form__input">
+                <div class="item__msg">Пароли не совпадают.</div>
+            </div>
+            <div class="box__item">
+                <input type="checkbox" name="agreed" id="agreed">
+                <label for="agreed" class="form__checkbox form__checkbox_styled">Согласен с пользовательским
+                    соглашением</label>
+            </div>
+            <div class="box__item box__item--center-btn">
+                <input type="button" value="Отправить" class="form__btn" id="form__btn">
+            </div>
+            <div class="box__errors" id="box__errors">
+                <div class="item__msg">Не заполнены поля</div> 
+                <div class="item__msg">Проверьте пароли</div> 
+                <div class="item__msg">Галка</div> 
+            </div>
+        </div>
+    </form>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
